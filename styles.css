@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════
-   ALIBI SHOKPUTOV — Academic Portfolio
+   ALIBI SHOKPUTOV - Academic Portfolio
    ════════════════════════════════════════════════ */
 
 /* ── Variables ── */
@@ -60,21 +60,6 @@ strong { font-weight: 600; }
 .container {
   width: min(var(--max-w), 100% - 3rem);
   margin-inline: auto;
-}
-
-/* ══════════════════════════════════════════════
-   PROGRESS BAR
-══════════════════════════════════════════════ */
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 3px;
-  width: 0%;
-  background: linear-gradient(90deg, var(--blue), var(--blue-light));
-  z-index: 999;
-  transition: width 0.1s linear;
-  border-radius: 0 2px 2px 0;
 }
 
 /* ══════════════════════════════════════════════
@@ -153,27 +138,6 @@ strong { font-weight: 600; }
 .site-header.is-scrolled .nav-links a:hover,
 .site-header.is-scrolled .nav-links a.is-active { color: var(--blue); }
 .site-header.is-scrolled .nav-links a::after { background: var(--blue); }
-
-.btn-nav {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.45em 1em;
-  border: 1.5px solid rgba(255,255,255,0.4);
-  border-radius: var(--radius-sm);
-  color: #fff !important;
-  font-size: 0.8rem !important;
-  font-weight: 600 !important;
-  white-space: nowrap;
-  transition: background var(--transition), border-color var(--transition);
-}
-.btn-nav:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
-.btn-nav::after { display: none !important; }
-
-.site-header.is-scrolled .btn-nav {
-  border-color: var(--blue);
-  color: var(--blue) !important;
-}
-.site-header.is-scrolled .btn-nav:hover { background: rgba(30,84,183,0.06); }
 
 .nav-toggle {
   display: none;
@@ -472,38 +436,6 @@ strong { font-weight: 600; }
 }
 @keyframes rotateSlow { to { transform: rotate(360deg); } }
 
-/* Floating badges */
-.photo-badge {
-  position: absolute;
-  background: rgba(255,255,255,0.95);
-  border-radius: var(--radius-md);
-  padding: 0.55rem 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(8px);
-}
-.photo-badge-1 { bottom: 20px; left: -10px; }
-.photo-badge-2 { top: 20px; right: -10px; }
-
-.badge-num {
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--blue);
-  line-height: 1;
-}
-.badge-label {
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-top: 0.2rem;
-  white-space: nowrap;
-}
-
 /* Scroll hint */
 .hero-scroll {
   position: absolute;
@@ -526,7 +458,7 @@ strong { font-weight: 600; }
 }
 
 /* ══════════════════════════════════════════════
-   SECTIONS — SHARED
+   SECTIONS - SHARED
 ══════════════════════════════════════════════ */
 .section { padding: 5.5rem 0; }
 .section-alt { background: var(--bg-alt); }
@@ -584,7 +516,55 @@ strong { font-weight: 600; }
 }
 
 /* ══════════════════════════════════════════════
-   RESEARCH — DISSERTATION
+   EDUCATION
+══════════════════════════════════════════════ */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0 2rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.edu-item:first-child { padding-top: 0; }
+.edu-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+.edu-period {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--blue);
+  padding-top: 0.15rem;
+}
+
+.edu-degree {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+}
+
+.edu-inst {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.edu-detail {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.edu-detail + .edu-detail { margin-top: 0.2rem; }
+
+/* ══════════════════════════════════════════════
+   RESEARCH - DISSERTATION
 ══════════════════════════════════════════════ */
 .dissertation-block {
   display: grid;
@@ -634,7 +614,7 @@ strong { font-weight: 600; }
 }
 
 /* ══════════════════════════════════════════════
-   RESEARCH — FINDINGS
+   RESEARCH - FINDINGS
 ══════════════════════════════════════════════ */
 .findings-grid {
   display: grid;
@@ -704,7 +684,7 @@ strong { font-weight: 600; }
 }
 
 /* ══════════════════════════════════════════════
-   RESEARCH — INTERESTS
+   RESEARCH - INTERESTS
 ══════════════════════════════════════════════ */
 .interests-grid {
   display: grid;
@@ -825,6 +805,22 @@ strong { font-weight: 600; }
   background: rgba(30,84,183,0.08);
   border-radius: var(--radius-sm);
   padding: 0.35em 0.5em;
+  text-align: center;
+  line-height: 1.2;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.pub-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.35em 0.4em;
   text-align: center;
   line-height: 1.2;
   flex-shrink: 0;
@@ -966,7 +962,7 @@ strong { font-weight: 600; }
 }
 
 /* ══════════════════════════════════════════════
-   EXPERIENCE — TIMELINE
+   EXPERIENCE - TIMELINE
 ══════════════════════════════════════════════ */
 .timeline {
   position: relative;
@@ -1050,21 +1046,6 @@ strong { font-weight: 600; }
   color: var(--text-muted);
 }
 
-.timeline-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gold);
-  background: var(--gold-light);
-  border: 1px solid rgba(201,146,42,0.3);
-  padding: 0.3em 0.8em;
-  border-radius: 2rem;
-  flex-shrink: 0;
-  margin-top: 0.1rem;
-}
-
 .timeline-details {
   list-style: none;
   display: flex;
@@ -1094,7 +1075,7 @@ strong { font-weight: 600; }
 ══════════════════════════════════════════════ */
 .awards-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
 }
 
@@ -1234,8 +1215,6 @@ strong { font-weight: 600; }
   .hero-badge { margin-inline: auto; }
 
   .photo-frame { width: 220px; height: 220px; }
-  .photo-badge-1 { bottom: 0; left: -5px; }
-  .photo-badge-2 { top: 0; right: -5px; }
 
   .findings-grid { grid-template-columns: 1fr; }
 
@@ -1279,14 +1258,6 @@ strong { font-weight: 600; }
     color: rgba(255,255,255,0.75);
   }
   .nav-links a::after { display: none; }
-  .btn-nav {
-    margin: 0.75rem 1.5rem 0;
-    text-align: center;
-    justify-content: center;
-    border-color: rgba(255,255,255,0.3) !important;
-    color: #fff !important;
-    background: rgba(255,255,255,0.08) !important;
-  }
 
   .nav-toggle { display: flex; }
 
@@ -1304,6 +1275,8 @@ strong { font-weight: 600; }
   }
 
   .pub-item { grid-template-columns: 44px 1fr; gap: 1rem; }
+
+  .edu-item { grid-template-columns: 1fr; gap: 0.3rem; }
 
   .awards-grid { grid-template-columns: 1fr 1fr; }
 

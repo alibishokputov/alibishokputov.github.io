@@ -1,4 +1,4 @@
-# Alibi Shokputov — Academic Website
+# Alibi Shokputov - Academic Website
 
 Personal academic website for the 2025–2026 job market.
 Deployed via **GitHub Pages** from the repository root.
@@ -27,7 +27,7 @@ Deployed via **GitHub Pages** from the repository root.
 /
 ├── index.html              # Single-page site (all sections)
 ├── styles.css              # All styles
-├── Alibi-Shokputov-CV.pdf  # CV — downloaded via button and embedded in CV section
+├── CV_Alibi_Shokputov.pdf  # CV, downloaded via button and embedded in CV section
 └── README.md
 ```
 
@@ -40,17 +40,18 @@ All content lives in `index.html`. Each section has a clearly labelled `<section
 | Section | `id` |
 |---|---|
 | Hero / About | `top` (inside `<main>`) |
+| Education | `education` |
 | Research | `research` |
 | Publications & Conference Papers | `publications` |
 | Teaching | `teaching` |
 | Experience | `experience` |
 | CV | `cv` |
 
-Edit the HTML directly. No build step is required — GitHub Pages serves the files as-is.
+Edit the HTML directly. No build step is required, GitHub Pages serves the files as-is.
 
 ### Update the CV PDF
 
-Replace `Alibi-Shokputov-CV.pdf` with the new file (keep the same filename), then commit and push. The download button and inline viewer will automatically use the new file.
+Replace `CV_Alibi_Shokputov.pdf` with the new file (keep the same filename), then commit and push. The download button and inline viewer will automatically use the new file.
 
 ### Add a new publication
 
