@@ -37,7 +37,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 16px;
-  font-size: 15.5px;
+  font-size: 16.5px;
 }
 body {
   font-family: var(--font-sans);
@@ -131,7 +131,7 @@ strong { font-weight: 600; }
 
 .sidebar-name {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1.28rem;
   font-weight: 600;
   color: #fff;
   letter-spacing: -0.01em;
@@ -139,14 +139,14 @@ strong { font-weight: 600; }
 }
 
 .sidebar-title {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: rgba(255,255,255,0.7);
   line-height: 1.45;
   margin-bottom: 0.3rem;
 }
 
 .sidebar-inst {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: rgba(255,255,255,0.5);
   margin-bottom: 0.9rem;
 }
@@ -156,13 +156,14 @@ strong { font-weight: 600; }
   background: rgba(201,146,42,0.15);
   border: 1px solid rgba(201,146,42,0.4);
   color: #e8b96a;
-  font-size: 0.62rem;
+  font-size: 0.56rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 0.35em 0.75em;
   border-radius: 2rem;
   margin-bottom: 1.1rem;
+  white-space: nowrap;
 }
 
 .sidebar-cv {
@@ -205,7 +206,7 @@ strong { font-weight: 600; }
 .sidebar-nav a {
   display: block;
   padding: 0.4em 0.5em;
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 500;
   color: rgba(255,255,255,0.55);
   text-decoration: none;
@@ -294,20 +295,20 @@ strong { font-weight: 600; }
 .intro .section-title { margin-bottom: 0.75rem; }
 .intro-greeting {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 0.4rem;
 }
 .intro-bio {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   color: var(--text);
   line-height: 1.65;
   max-width: 620px;
   margin-bottom: 0.5rem;
 }
 .intro-bio-secondary {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
 }
 
@@ -321,7 +322,7 @@ strong { font-weight: 600; }
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+  font-size: clamp(1.4rem, 2.8vw, 1.75rem);
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.02em;
@@ -341,7 +342,7 @@ strong { font-weight: 600; }
 }
 
 .subsection-title {
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -378,12 +379,12 @@ strong { font-weight: 600; }
 }
 .edu-list li:last-child { border-bottom: none; padding-bottom: 0; }
 .edu-list strong {
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   font-weight: 600;
   color: var(--text);
 }
 .edu-meta {
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
 }
 
@@ -398,7 +399,7 @@ strong { font-weight: 600; }
 
 .dissertation-title {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--text);
   line-height: 1.35;
@@ -406,13 +407,13 @@ strong { font-weight: 600; }
 }
 
 .dissertation-meta {
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   margin-bottom: 0.6rem;
 }
 
 .dissertation-desc {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   line-height: 1.6;
   color: var(--text);
 }
@@ -427,14 +428,14 @@ strong { font-weight: 600; }
 }
 
 .research-theme h4 {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 0.15rem;
 }
 
 .research-theme-q {
-  font-size: 0.76rem;
+  font-size: 0.86rem;
   color: var(--text-muted);
   font-style: italic;
   margin-bottom: 0.4rem;
@@ -444,7 +445,7 @@ strong { font-weight: 600; }
   list-style: none;
 }
 .research-theme li {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.5;
   padding-left: 0.85rem;
@@ -468,7 +469,7 @@ strong { font-weight: 600; }
   margin-top: 1.1rem;
 }
 .research-tag {
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--blue);
   background: rgba(30,84,183,0.08);
@@ -506,7 +507,7 @@ strong { font-weight: 600; }
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 4px;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-family: 'Courier New', monospace;
   color: var(--text);
   transition: background var(--transition), border-color var(--transition), color var(--transition);
@@ -572,7 +573,7 @@ strong { font-weight: 600; }
 }
 
 .pub-citation {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   line-height: 1.55;
   color: var(--text);
   margin-bottom: 0.35rem;
@@ -635,14 +636,14 @@ strong { font-weight: 600; }
 
 .course-name {
   font-family: var(--font-serif);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 0.25rem;
 }
 
 .course-sub {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
 }
 
@@ -700,7 +701,7 @@ strong { font-weight: 600; }
 }
 
 .teaching-detail p {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   line-height: 1.55;
   color: var(--text);
 }
@@ -778,7 +779,7 @@ strong { font-weight: 600; }
 }
 
 .timeline-title {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   font-weight: 700;
   font-family: var(--font-sans);
   color: var(--text);
@@ -786,7 +787,7 @@ strong { font-weight: 600; }
 }
 
 .timeline-org {
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
 }
 
@@ -797,7 +798,7 @@ strong { font-weight: 600; }
   gap: 0.4rem;
 }
 .timeline-details li {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   line-height: 1.55;
   color: var(--text);
   padding-left: 1rem;
@@ -834,7 +835,7 @@ strong { font-weight: 600; }
 .award-item:hover { box-shadow: var(--shadow-md); border-color: rgba(30,84,183,0.25); }
 
 .award-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text);
   line-height: 1.3;
@@ -842,15 +843,15 @@ strong { font-weight: 600; }
 }
 
 .award-amt {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--blue);
   margin-bottom: 0.3rem;
 }
-.award-amt-text { font-size: 0.85rem; }
+.award-amt-text { font-size: 0.95rem; }
 
 .award-org {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
 }
 
@@ -858,7 +859,7 @@ strong { font-weight: 600; }
    CV SECTION
 ══════════════════════════════════════════════ */
 .cv-lede {
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   color: var(--text-muted);
   margin-bottom: 1rem;
   max-width: 520px;
@@ -874,7 +875,7 @@ strong { font-weight: 600; }
    CONTACT
 ══════════════════════════════════════════════ */
 .contact-lede {
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   color: var(--text-muted);
   line-height: 1.6;
   max-width: 520px;
@@ -891,7 +892,7 @@ strong { font-weight: 600; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--text);
   text-decoration: none;
