@@ -391,29 +391,9 @@ strong { font-weight: 600; }
    RESEARCH - DISSERTATION
 ══════════════════════════════════════════════ */
 .dissertation-block {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0 1.5rem;
-  background: linear-gradient(135deg, rgba(30,84,183,0.04) 0%, rgba(30,84,183,0.01) 100%);
-  border: 1px solid rgba(30,84,183,0.15);
-  border-left: 4px solid var(--blue);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 0.25rem;
-}
-
-.dissertation-label {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .dissertation-title {
@@ -982,16 +962,6 @@ strong { font-weight: 600; }
 
 @media (max-width: 640px) {
   .section { padding: 1.75rem 0; }
-
-  .dissertation-block {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-  .dissertation-label {
-    writing-mode: horizontal-tb;
-    transform: none;
-    justify-content: flex-start;
-  }
 
   .research-themes { grid-template-columns: 1fr; }
 
