@@ -25,9 +25,15 @@ Deployed via **GitHub Pages** from the repository root.
 
 ```
 /
-├── index.html              # Single-page site (all sections)
+├── index.html              # Home: bio, dissertation, education, awards
+├── research.html           # Dissertation essays, papers, presentations, applied work
+├── teaching.html           # Courses
+├── cv.html                 # Embedded CV + download
 ├── styles.css              # All styles
-├── CV_Alibi_Shokputov.pdf  # CV, downloaded via button and embedded in CV section
+├── CV_Alibi_Shokputov.pdf  # CV (linked from Home and CV pages)
+├── References_Alibi_Shokputov.pdf  # Referee contact sheet (linked from Home and CV pages)
+├── Teaching_Statement_Alibi_Shokputov.pdf  # Linked from Teaching page
+├── photos/alibi-shokputov.jpeg
 └── README.md
 ```
 
@@ -35,19 +41,7 @@ Deployed via **GitHub Pages** from the repository root.
 
 ## Editing content
 
-All content lives in `index.html`. Each section has a clearly labelled `<section id="...">` block:
-
-| Section | `id` |
-|---|---|
-| Hero / About | `top` (inside `<main>`) |
-| Education | `education` |
-| Research | `research` |
-| Publications & Conference Papers | `publications` |
-| Teaching | `teaching` |
-| Experience | `experience` |
-| CV | `cv` |
-
-Edit the HTML directly. No build step is required, GitHub Pages serves the files as-is.
+Each page is plain HTML. The header and footer are repeated in all four files, so edit nav or contact links in each.
 
 ### Update the CV PDF
 
@@ -55,7 +49,7 @@ Replace `CV_Alibi_Shokputov.pdf` with the new file (keep the same filename), the
 
 ### Add a new publication
 
-Open `index.html`, find the `<ol class="pub-list">` inside the **Publications** section, and prepend a new `<li class="pub-item">` with the citation. Bold your name with `<strong>Shokputov, A.</strong>`.
+Open `research.html`, find the relevant `<ol class="cites">`, and add a new `<li>` with the citation. Bold your name with `<strong>Shokputov, A.</strong>`.
 
 ---
 
